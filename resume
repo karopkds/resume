@@ -1,0 +1,214 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+        ignoreheadfoot, % set margins without considering header and footer
+        top=1cm, % separation between body and page edge from the top
+        bottom=2 cm, % separation between body and page edge from the bottom
+        left=2 cm, % separation between body and page edge from the left
+        right=2 cm, % separation between body and page edge from the right
+        footskip=1.0 cm, % separation between body and footer
+        % showframe % for debugging 
+    ]{geometry} % for adjusting page geometry
+\usepackage[explicit]{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 79, 144} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Karop Dezosa S CV},
+    pdfauthor={Karop Dezosa S},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata, and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage[default, type1]{sourcesanspro} % for using source sans 3 font
+\usepackage{ifthen}
+\usepackage{xcolor} % for colors
+\usepackage{hyperref}
+
+% Define primary color
+\definecolor{primaryColor}{RGB}{0, 79, 144} % Blue color
+% Redefine color for various elements
+\colorlet{defaultColor}{primaryColor} % Default text color
+\colorlet{linkColor}{primaryColor} % Hyperlink color
+\colorlet{iconColor}{primaryColor} % Font Awesome icon color
+
+% Some settings:
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\makeatletter
+\let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
+\patchcmd{\ps@customFooterStyle}{
+    \color{gray}\textit{\small }
+}{}{} % replace number by desired string
+\makeatother
+
+\titleformat{\section}{
+        % make the font size of the section title large and color it with the primary color
+        \Large\color{primaryColor}
+    }{
+    }{
+    }{
+        % print bold title, give 0.15 cm space, and draw a line of 0.8 pt thickness
+        % from the end of the title to the end of the body
+        \textbf{#1}\hspace{0.15cm}\titlerule[0.8pt]\hspace{-0.1cm}
+    }[] % section title formatting
+
+\titlespacing{\section}{
+        % left space:
+        0pt
+    }{
+        % top space:
+        0.3 cm
+    }{
+        % bottom space:
+        0.2 cm
+    } % section title spacing
+
+\newcolumntype{L}[1]{
+    >{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}
+} % left-aligned fixed-width column type
+\newcolumntype{R}[1]{
+    >{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}
+} % right-aligned fixed-width column type
+\newcolumntype{K}[1]{
+    >{\let\newline\\\arraybackslash\hspace{0pt}}X
+} % justified flexible width column type
+\setlength\tabcolsep{-1.5pt} % no space between columns
+\newenvironment{highlights}{
+        \begin{itemize}[
+                topsep=0pt,
+                parsep=0.10 cm,
+                partopsep=0pt,
+                itemsep=0pt,
+                after=\vspace{-1\baselineskip},
+                leftmargin=0.4 cm + 3pt
+            ]
+    }{
+        \end{itemize}
+    } % new environment for highlights
+
+\newenvironment{header}{
+        \setlength{\topsep}{0pt}\par\kern\topsep\centering\color{primaryColor}\linespread{1.5}
+    }{
+        \par\kern\topsep
+    } % new environment for the header
+
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+ % new command for external links:
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\mbox{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}}
+
+\let\originalTabularx\tabularx
+\let\originalEndTabularx\endtabularx
+
+\renewenvironment{tabularx}{\bgroup\centering\originalTabularx}{\originalEndTabularx\par\egroup}
+
+% For TextEntrys (see https://tex.stackexchange.com/a/600/287984):
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1\topsep=0pt\itemsep=0pt\parsep=0pt\parskip=0pt\labelwidth=0pt\itemindent=0pt\labelsep=0pt}\item[]}
+\let\endchangemargin=\endlist 
+
+% Ensure that generate pdf is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+\begin{document}
+    \vspace{0.2cm}
+    \begin{center}
+    {\bfseries\fontsize{28pt}{28pt}\selectfont \textcolor{defaultColor}{Karop Dezosa S}} \\
+    \vspace{0.4cm} % Adjust the vertical space here
+
+    \begin{tabularx}{\textwidth}{@{} X r @{}}
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/karop-dezosa-s}{{\faLinkedin} karop-dezosa-s@linkedin}} & 
+        
+        \small\textcolor{defaultColor}{\faMapMarker* Bangalore, Karnataka, India} \\[6pt]
+         
+         \mbox{\hrefWithoutArrow{https://github.com/devopshydclub}{{\faGithub} karop-dezosa-s@github}} & 
+         
+         \mbox{\hrefWithoutArrow{mailto:dezosaskarop@gmail.com}{{\faEnvelope} mailto:dezosaskarop@gmail.com}}  $\vert$ 
+
+         \mbox{\hrefWithoutArrow{tel:+917708309706}{{\footnotesize\faPhone*}\hspace*{0.13cm}+91-7708309706}}
+        
+        \\
+        
+    \end{tabularx}
+
+    \end{center}
+
+    \section{Summary}
+
+      \begin{changemargin}{0.2 cm}{0.2 cm}
+        A seasoned System Engineer transitioning into the realm of \textbf{DevOps}, bringing with me a robust skillset in \textbf{AWS cloud infrastructure management} and \textbf{Linux} system administration. with a proven ability to design, deploy, and maintain complex systems.
+      \end{changemargin}
+
+    \section{Technologies}
+    
+        \hspace*{0.3cm}\textbf{Operating System\hspace*{0.05cm}:} Ubundu, Redhat, CentOS, Windows
+         \vspace{0.1cm}
+         
+         \hspace*{0.3cm}\textbf{Cloud Services\hspace*{0.55cm}:} Amazon Web service (EC2, S3, IAM, Lambda, RDS, Route 53, EKS, KBS, VPc, Subnets and more.)
+         \vspace{0.1cm}
+         
+         \hspace*{0.3cm}\textbf{Devops Tools\hspace*{0.75cm}:}  Linux, Git, Jenkins, Docker, Kubernetes, Ansible, Vagrant, Terraform, Bash Scripting, Vm Ware, \hspace*{3.40cm}Maven, Npm, nvm, Java, JavaScript.
+         \vspace{0.1cm}
+
+        \hspace*{0.3cm}\textbf{Monitoring Tools\hspace*{0.20cm}:}  Grafana, Prometheus, CloudWatch, DataDog, Site24/7.
+
+        
+    \section{Experience}
+        \begin{tabularx}{\textwidth}{@{} X r @{}}
+            \hspace*{0.2cm}\textbf{System Engineer - Infrastructure and Cloud}, 
+            \mbox{\hrefWithoutArrow{https://www.venturesoftglobal.com/}{Venture SoftTech India Pvt.Ltd} \hspace{03.20 cm} \textcolor{defaultColor}{May 2022 - Present}} 
+             \vspace{0.10 cm}
+            \begin{highlights}
+               \item Cloud Infrastructure Design: Collaborate with architects and stakeholders to design cloud infrastructure solutions tailored to the organization's need.- AWS
+              \item Deployment and Configuration: Deployed and configured virtual machines, containers, and serverless functions on cloud platforms.
+              \item Monitoring and Optimization: Set up monitoring and alerting system activities such as CPU, Memory, Disk, and Swap space usage to avoid any performance issues.
+              \item Conducted account management tasks, creating, modifying, and deactivating user accounts according to organizational requirements in the AWS and Google Admin Consoles.
+              \item Troubleshooting and Support: Investigate and resolve technical issues related to cloud services. Provide support to development teams and end-users for cloud-related problems.
+              \item Responsible for installation and configuration of Jenkins to support various Java builds and Jenkins plugins to automate continuous builds and publishing Docker images to the Nexus repository.
+        \end{highlights}
+        \end{tabularx}
+        \vspace*{0.3cm}
+        \begin{tabularx}{\textwidth}{@{} X r @{}}
+            \hspace*{0.2cm}\textbf{Software Engineer}, 
+            \mbox{\hrefWithoutArrow{https://www.nulogic.io/}{Nu technology Pvt.Ltd} \hspace{08.20 cm} \textcolor{defaultColor}{Nov 2020 - Apr 2022}} 
+            \begin{highlights}
+               \item Worked has Software Engineer and developed the E-commerce site. Worked in ATG and many jira related to Backend API.
+              \item Gained hands-on experience in SDLC software development life cycle
+              \item Assisted in developing software solutions, contributing to various projects.
+              \item Monitored the E-commerce site with Grafana tool, New Relic, AWS Cloud watch, Cloudassist, site24x7.
+              \item Supported the Project on new Version build and Migration of new Update.
+              \item Troubleshooting and Support: Investigate and resolve technical issues related to cloud services. Provide support to development teams and end-users for cloud-related problems.
+        \end{highlights}
+       
+        \end{tabularx}
+    
+
+    \section{Education}
+
+        \begin{tabularx}{\textwidth}{@{} X r @{}}
+            \hspace*{0.2cm}\mbox{\hrefWithoutArrow{https://mec.edu.in/}{\faGraduationCap\ Muthayammal Engineering College}} & 
+            \small\textcolor{defaultColor}{\faMapMarker* Namakkal, Tamil Nadu, India} \\[3pt]
+           \hspace*{0.75cm}{Bachelor of Technology in Information Technology} & 
+           \small\textcolor{defaultColor}{August 2016 – Sep 2020}
+        \end{tabularx}
+
+    \section{Key Achievement's}
+    \begin{highlights}
+           \item Recognized as a top performer within my team, consistently exceeding expectations         
+           \item Learned and applied them to deliver multiple projects on time, even under tight deadlines    
+           \item Achieved a client satisfaction rating through exceptional output
+                
+     \end{highlights}
+
+\end{document}
