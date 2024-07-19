@@ -152,7 +152,7 @@
 
     \section{Technologies}
     
-        \hspace*{0.3cm}\textbf{Operating System\hspace*{0.05cm}:} Ubundu, Redhat, CentOS, Windows
+        \hspace*{0.3cm}\textbf{Operating System\hspace*{0.05cm}:} Ubundu, Redhat, CentOS, Windows.
          \vspace{0.1cm}
          
          \hspace*{0.3cm}\textbf{Cloud Services\hspace*{0.55cm}:} Amazon Web service (EC2, S3, IAM, Lambda, RDS, Route 53, EKS, KBS, VPc, Subnets and more.)
@@ -170,11 +170,11 @@
             \mbox{\hrefWithoutArrow{https://www.venturesoftglobal.com/}{Venture SoftTech India Pvt.Ltd} \hspace{03.20 cm} \textcolor{defaultColor}{May 2022 - Present}} 
              \vspace{0.10 cm}
             \begin{highlights}
-               \item Cloud Infrastructure Design: Collaborate with architects and stakeholders to design cloud infrastructure solutions tailored to the organization's need.- AWS
-              \item Deployment and Configuration: Deployed and configured virtual machines, containers, and serverless functions on cloud platforms.
-              \item Monitoring and Optimization: Set up monitoring and alerting system activities such as CPU, Memory, Disk, and Swap space usage to avoid any performance issues.
+               \item \textbf{Cloud Infrastructure Design}: Collaborated with architects and stakeholders to design cloud infrastructure solutions tailored to the organization's need.- AWS
+              \item \textbf{Deployment and Configuration:} Deployed and configured virtual machines, containers, and serverless functions on cloud platforms.
+              \item \textbf{Monitoring and Optimization:} Set up monitoring and alerting system activities such as CPU, Memory, Disk, and Swap space usage to avoid any performance issues.
+              \item \textbf{Troubleshooting and Support:} Investigate and resolve technical issues related to cloud services. Provide support to development teams and end-users for cloud-related problems.
               \item Conducted account management tasks, creating, modifying, and deactivating user accounts according to organizational requirements in the AWS and Google Admin Consoles.
-              \item Troubleshooting and Support: Investigate and resolve technical issues related to cloud services. Provide support to development teams and end-users for cloud-related problems.
               \item Responsible for installation and configuration of Jenkins to support various Java builds and Jenkins plugins to automate continuous builds and publishing Docker images to the Nexus repository.
         \end{highlights}
         \end{tabularx}
