@@ -147,31 +147,41 @@
     \section{Summary}
 
       \begin{changemargin}{0.2 cm}{0.2 cm}
-        A seasoned System Engineer transitioning into the realm of \textbf{DevOps}, bringing with me a robust skillset in \textbf{AWS cloud infrastructure management} and \textbf{Linux} system administration. with a proven ability to design, deploy, and maintain complex systems.
+        A seasoned System Engineer transitioning into the realm of \textbf{DevOps}, bringing with me a robust skillset in \textbf{AWS cloud infrastructure management} and \textbf{Linux}. with a proven ability to design, deploy, and maintain complex systems.
       \end{changemargin}
 
     \section{Technologies}
     
-        \hspace*{0.3cm}\textbf{Operating System\hspace*{0.05cm}:} Ubundu, Redhat, CentOS, Windows.
+        \hspace*{0.3cm}\textbf{Operating System \hspace*{0.05cm}:} Linux (Ubuntu, Red Hat, CentOS), Windows.
          \vspace{0.1cm}
          
-         \hspace*{0.3cm}\textbf{Cloud Services\hspace*{0.55cm}:} Amazon Web service (EC2, S3, IAM, Lambda, RDS, Route 53, EKS, KBS, VPc, Subnets and more.)
+         \hspace*{0.3cm}\textbf{Cloud Services \& Monitoring Tools \hspace*{0.10cm}:} Amazon Web service \& Grafana, Prometheus, CloudWatch, DataDog, Site24/7.
          \vspace{0.1cm}
          
-         \hspace*{0.3cm}\textbf{Devops Tools\hspace*{0.75cm}:}  Linux, Git, Jenkins, Docker, Kubernetes, Ansible, Vagrant, Terraform, Bash Scripting, Vm Ware, \hspace*{3.40cm}Maven, Npm, nvm, Java, JavaScript.
-         \vspace{0.1cm}
-
-        \hspace*{0.3cm}\textbf{Monitoring Tools\hspace*{0.20cm}:}  Grafana, Prometheus, CloudWatch, DataDog, Site24/7.
-
+         \hspace*{0.3cm}\textbf{Devops Tools\hspace*{0.81cm}:} Git, Jenkins, Docker, Kubernetes, Ansible, Terraform, Bash Scripting, VmWare, Maven, Npm,Javascript.
         
     \section{Experience}
-        \begin{tabularx}{\textwidth}{@{} X r @{}}
+      \begin{tabularx}{\textwidth}{@{} X r @{}}
             \hspace*{0.2cm}\textbf{System Engineer - Infrastructure and Cloud}, 
             \mbox{\hrefWithoutArrow{https://www.venturesoftglobal.com/}{Venture SoftTech India Pvt.Ltd} \hspace{03.20 cm} \textcolor{defaultColor}{May 2022 - Present}} 
+             \begin{highlights}
+               \item  Designed and implemented the AWS infrastructure, including VPCs, EC2 instances, and S3 storage, to optimize resource usage and enhance security.
+                \end{highlights}
+             \vspace{0.10 cm}
+               \end{tabularx}
+             \begin{tabularx}{\textwidth}{@{} X r @{}}
+            \hspace*{0.2cm}\textbf{Software Engineer}, 
+            \mbox{\hrefWithoutArrow{https://www.nulogic.io/}{Nu technology Pvt.Ltd} \hspace{08.20 cm} \textcolor{defaultColor}{Nov 2020 - Apr 2022}} 
+            \begin{highlights}
+               \item  Developed and maintained the backend of an e-commerce website using Java, focusing on resolving critical issues to improve performance and reliability.
+                \end{highlights}
+        \end{tabularx}
+     \section{Projects}
+        \begin{tabularx}{\textwidth}{@{} X r @{}}
+            \hspace*{0.2cm}\textbf{Arable.com}. 
              \vspace{0.10 cm}
             \begin{highlights}
-               \item \textbf{Cloud Infrastructure Design}: Collaborated with architects and stakeholders to design cloud infrastructure solutions tailored to the organization's need.- AWS
-              \item \textbf{Deployment and Configuration:} Deployed and configured virtual machines, containers, and serverless functions on cloud platforms.
+              \item \textbf{Deployment and Configuration:} Design, deployed, and configured virtual machines, containers, and performed patching activity on Linux environment in AWS cloud platforms.
               \item \textbf{Monitoring and Optimization:} Set up monitoring and alerting system activities such as CPU, Memory, Disk, and Swap space usage to avoid any performance issues.
               \item \textbf{Troubleshooting and Support:} Investigate and resolve technical issues related to cloud services. Provide support to development teams and end-users for cloud-related problems.
               \item Conducted account management tasks, creating, modifying, and deactivating user accounts according to organizational requirements in the AWS and Google Admin Consoles.
@@ -180,15 +190,14 @@
         \end{tabularx}
         \vspace*{0.3cm}
         \begin{tabularx}{\textwidth}{@{} X r @{}}
-            \hspace*{0.2cm}\textbf{Software Engineer}, 
-            \mbox{\hrefWithoutArrow{https://www.nulogic.io/}{Nu technology Pvt.Ltd} \hspace{08.20 cm} \textcolor{defaultColor}{Nov 2020 - Apr 2022}} 
+            \hspace*{0.2cm}\textbf{RoadRunnerSports.com}. 
             \begin{highlights}
-               \item Worked has Software Engineer and developed the E-commerce site. Worked in ATG and many jira related to Backend API.
+               \item Developed and maintained an e-commerce site, working with ATG and addressing various backend issues through Jira.
               \item Gained hands-on experience in SDLC software development life cycle
-              \item Assisted in developing software solutions, contributing to various projects.
+              \item Assisted in developing software solutions, contributing to various projects like Roadnrunnersport and express.com
               \item Monitored the E-commerce site with Grafana tool, New Relic, AWS Cloud watch, Cloudassist, site24x7.
               \item Supported the Project on new Version build and Migration of new Update.
-              \item Troubleshooting and Support: Investigate and resolve technical issues related to cloud services. Provide support to development teams and end-users for cloud-related problems.
+              \item Worked on SEO url for the e-commerce website for Roadnrunnersport and express.com
         \end{highlights}
        
         \end{tabularx}
@@ -205,10 +214,7 @@
 
     \section{Key Achievement's}
     \begin{highlights}
-           \item Recognized as a top performer within my team, consistently exceeding expectations         
-           \item Learned and applied them to deliver multiple projects on time, even under tight deadlines    
-           \item Achieved a client satisfaction rating through exceptional output
-                
+           \item Recognized as a top performer within my team, consistently exceeding expectations.
      \end{highlights}
 
 \end{document}
