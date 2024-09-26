@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author: Afrith Khan                                 %
+% DevOps Engineer                                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume}
+
+\begin{document}
+
+% --------- Contact Information -----------
+\introduction[
+    fullname={Karop Dezosa S},
+    email={dezosakarop541999@gmail.com},
+    phone={+91 7708309706},
+    linkedin={https://www.linkedin.com/in/karop-dezosa-s}
+]
+% --------- Skills -----------
+\vspace{-2em}
+\section*{Summary}
+\vspace{-2em} % Reduces the space between the section heading and the line
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}  % Adds the horizontal line
+\vspace{-1.85em} % Adjusts space between the line and the content (optional)
+\begin{itemize}
+    \setlength{\leftmargin}{0em} % Removes default indentation of itemize environment
+    \setlength{\itemindent}{-0.70\leftmargini} % Moves bullet points to align with the "S" in Summary
+    \setlength{\labelsep}{0.5em} % Adjusts space between bullet and text
+    \setlength{\itemsep}{1.5pt} % Adjust the spacing between items
+    \setlength{\parskip}{-1pt}   % Adjust spacing between paragraphs
+    \setlength{\parsep}{-1pt}    % Adjust spacing between list items and text
+    \item Dynamic professional with \textbf{3+ years} of comprehensive experience in Cloud and DevOps.
+    \item Proficient in containerization with Docker and Kubernetes, enhancing application deployment and scalability.
+    \item Skilled in infrastructure automation using Terraform and configuration management with Ansible.
+    \item Experienced in designing and maintaining CI/CD pipelines with Jenkins, ensuring efficient and reliable deployments.
+    \item Adept at monitoring and performance management using Grafana, Prometheus, DataDog, CloudWatch and site24X7.
+\end{itemize}
+% --------- Skills -----------
+\begin{skillsSection}{Technical Skills}
+    \skillItem[
+        category={Cloud Platform},
+        skills={AWS}
+    ] \\
+    \skillItem[
+        category={Containerization and Orchestration},
+        skills={Docker, Kubernetes}
+    ] \\
+    \skillItem[
+        category={Infrastructure as Code},
+        skills={Terraform}
+    ] \\
+    \skillItem[
+        category={CI/CD},
+        skills={Jenkins}
+    ] \\
+    \skillItem[
+        category={Configuration Management},
+        skills={Ansible}
+    ] \\
+    \skillItem[
+        category={Monitoring},
+        skills={Grafana, Prometheus, DataDog, Splunk}
+    ] \\
+    \skillItem[
+        category={Scanning Tools},
+        skills={SonarQube, Trivy}
+    ] \\
+    \skillItem[
+        category={Others},
+        skills={Linux, Nginx, Apache, Jira, Confluence, Nexus, Shell Script}
+    ]
+\end{skillsSection}
+
+% --------- Experience -----------
+\begin{experienceSection}{Professional Experience}
+    \experienceItem[
+        company={Venture SoftTech India Pvt. Ltd},
+        location={Chennai, India},
+        position={DevOps Engineer},
+        duration={Aug 2021 – Present}
+    ]
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Implemented and standardized DevOps practices organization-wide, enhancing deployment reliability and efficiency
+        \item Automated infrastructure provisioning and configuration management with Terraform and Ansible, streamlining setup and reducing manual errors
+\item Designed and maintained CI/CD pipelines with Jenkins, GitLab CI, and Azure DevOps, accelerating deployment cycles and ensuring consistent delivery.
+\item Integrated Trivy and SonarQube for continuous code quality and security analysis, enhancing compliance and reducing vulnerabilities
+\item Implemented container solutions using Docker and orchestrated deployments with Kubernetes, enhancing application scalability and reliability.
+\item Integrated Slack with CI/CD pipelines to provide real-time alerts on deployment status and application health, improving team
+response times
+\item Monitored system performance and health using Grafana and Prometheus, enabling proactive issue resolution and improved
+operational visibility.
+\item Established centralized logging solutions with Loki and ELK/EFK stacks for efficient log management and streamlined troubleshooting
+\item Implemented GitOps with Argo CD and Helm charts to automate deployment workflows and manage version control effectively.
+\item Configured automated tests using Bruno and set up Slack alerts for immediate notifications of test failures, enhancing test
+coverage and response
+\item Enhanced incident management with Robusta, leading to faster resolution times and increased system reliability
+\item Administered and optimized databases including MySQL, PostgreSQL, and MongoDB, ensuring high availability, performance,
+and data integrity
+\item Facilitated smooth migrations of applications and databases to cloud platforms, ensuring minimal downtime and seamless transitions
+\item Configured Grafana to visualize Kubernetes metrics, creating custom dashboards to track cluster performance, application metrics, and resource usage
+\item Created comprehensive documentation for infrastructure setups, processes, and troubleshooting guidelines, aiding in team
+knowledge sharing and onboarding
+    \end{itemize}
+\end{experienceSection}
+
+% --------- Education ---------
+\section*{Education}
+\vspace{-2em} % Reduces the space between the section heading and the line
+\hrulefill % Adds a horizontal line
+\vspace{1em}  % Adjusts space between the line and the content
+
+\noindent
+\textbf{Anna University (BIT Campus), Trichy} \hfill \textit{2017 - 2021} \\
+B.Tech., Information Technology
+
+% --------- Awards -----------
+\begin{experienceSection}{Awards}
+    \projectItem[
+        title={Committed Developer},
+        keyHighlight={Recognized for exceptional dedication and contributions to team projects.}
+    ] \\
+    \projectItem[
+        title={Consistent Performer},
+        keyHighlight={Honored for delivering high-quality performance and reliability.}
+    ]
+\end{experienceSection}
+
+\end{document}
